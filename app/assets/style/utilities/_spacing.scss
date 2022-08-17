@@ -1,0 +1,85 @@
+@each $value, $spacer in $spacers {
+  .mx-#{$value} {
+    margin: 0 #{$spacer};
+  }
+  .my-#{$value} {
+    margin: #{$spacer} 0;
+  }
+  .px-#{$value} {
+    padding: 0 #{$spacer};
+  }
+  .py-#{$value} {
+    padding: #{$spacer} 0;
+  }
+}
+
+@each $value, $spacer in $spacers {
+  @include pad {
+    .mx-md-#{$value} {
+      margin: 0 #{$spacer};
+    }
+    .my-md-#{$value} {
+      margin: #{$spacer} 0;
+    }
+    .px-md-#{$value} {
+      padding: 0 #{$spacer};
+    }
+    .py-md-#{$value} {
+      padding: #{$spacer} 0;
+    }
+  }
+}
+
+@each $value, $spacer in $spacers {
+  @include desktop {
+    .mx-lg-#{$value} {
+      margin: 0 #{$spacer};
+    }
+    .my-lg-#{$value} {
+      margin: #{$spacer} 0;
+    }
+    .px-lg-#{$value} {
+      padding: 0 #{$spacer};
+    }
+    .py-lg-#{$value} {
+      padding: #{$spacer} 0;
+    }
+  }
+}
+
+@each $value, $spacer in $spacers {
+  @each $key, $side in $sides {
+    .m#{$key}-#{$value} {
+      margin-#{$side}: #{$spacer};
+    }
+    .p#{$key}-#{$value} {
+      padding-#{$side}: #{$spacer};
+    }
+  }
+}
+
+@each $value, $spacer in $spacers {
+  @each $key, $side in $sides {
+    @include pad {
+      .m#{$key}-md-#{$value} {
+        margin-#{$side}: #{$spacer};
+      }
+      .p#{$key}-md-#{$value} {
+        padding-#{$side}: #{$spacer};
+      }
+    }
+  }
+}
+
+@each $value, $spacer in $spacers {
+  @each $key, $side in $sides {
+    @include desktop {
+      .m#{$key}-lg-#{$value} {
+        margin-#{$side}: #{$spacer};
+      }
+      .p#{$key}-lg-#{$value} {
+        padding-#{$side}: #{$spacer};
+      }
+    }
+  }
+}

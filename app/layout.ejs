@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
-  <link rel="stylesheet" href="./assets/style/all.css">
-</head>
+  <body>
+    <header class="header bg-primary py-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1>
+          <a href="./">目睭金金眼鏡行</a>
+        </h1>
+        <div class="btn-hamburger">
+          <button type="button" id="hamMenu">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <button type="button" class="active" id="hamClose">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+        </div>
+        <nav class="menu" id="navMenu">
+          <ul class="d-flex flex-column text-md-md">
+            <li><a href="products.html" class="text-white py-3">系列鏡框</a></li>
+            <li><a href="locations.html" class="text-white py-3">門市據點</a></li>
+            <li><a href="blog.html" class="text-white py-3">部落格</a></li>
+            <li><a href="faq.html" class="text-white py-3">常見問題</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    這是 header
-  </header>
+    <%- contents %>
 
-  <%- contents %>
+    <footer class="footer py-6 pt-md-12 pb-md-10">
+      <div class="container">
+        <div class="d-flex justify-content-between mb-6 mb-md-8">
+          <div class="d-flex flex-column">
+            <nav class="mb-md-8">
+              <ul class="d-none d-md-flex gap-md-12">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="products.html">系列鏡框</a></li>
+                <li><a href="locations.html">門市據點</a></li>
+                <li><a href="blog.html">部落格</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li class="mb-2 text-md-2xl">
+                <a href="tel:+886-80000000">
+                  <span class="material-symbols-outlined me-2 me-md-4 text-md-5xl align-text-bottom"> call </span
+                  >0800-000-00
+                </a>
+              </li>
+              <li class="text-md-2xl">
+                <a href="mailto:glasses@business.com">
+                  <span class="material-symbols-outlined me-2 me-md-4 text-md-5xl align-text-bottom"> mail </span
+                  >glasses@business.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="social-media d-flex gap-md-4">
+            <li>
+              <a href="#">
+                <img src="./assets/images/ic-social-fb.png" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/ic-social-ig.png" alt="instrgram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/ic-social-line.png" alt="line" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-md-between pt-4 pt-md-8 border-t copyright">
+          <p class="mb-2 mb-md-0">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="d-md-flex gap-md-12">
+            <li class="mb-2 mb-md-0">隱私權政策</li>
+            <li>服務條款</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
-
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 </html>

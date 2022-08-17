@@ -1,0 +1,29 @@
+// vertical-align
+@each $position in $vertical-aligns {
+  .align-#{$position} {
+    vertical-align: $position;
+  }
+}
+
+@each $align in $text-aligns {
+  .text-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+// text-align
+@each $align in $text-aligns {
+  @include pad {
+    .text-md-#{$align} {
+      text-align: #{$align};
+    }
+  }
+}
+
+@each $align in $text-aligns {
+  @include desktop {
+    .text-lg-#{$align} {
+      text-align: #{$align};
+    }
+  }
+}

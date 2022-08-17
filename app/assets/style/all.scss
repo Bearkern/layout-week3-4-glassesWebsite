@@ -1,23 +1,23 @@
-$color: #00cc99;
+@import 'base/reset';
+@import 'base/base';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/typography';
+@import 'utilities/align';
+@import 'utilities/grid';
+@import 'utilities/spacing';
+@import 'utilities/colors';
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import 'module/buttons';
+@import 'module/card';
+@import 'module/forms';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/index';
+@import 'pages/products';
+@import 'pages/locations';
+@import 'pages/faq';
+@import 'pages/blog';

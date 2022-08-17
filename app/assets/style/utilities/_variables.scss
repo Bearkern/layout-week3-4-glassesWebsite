@@ -1,0 +1,120 @@
+$primary-light: #fbf2f2;
+$primary: #aa0601;
+$primary-dark: #650300;
+$black: #000000;
+$white: #ffffff;
+$gray-light: #000029;
+$gray: #DEE2E6;
+$gray-dark: #707070;
+
+$colors: (
+  primary-light: $primary-light,
+  primary: $primary,
+  primary-dark: $primary-dark,
+  black: $black,
+  white: $white,
+  gray-light: $gray-light,
+  gray: $gray,
+  gray-dark: $gray-dark,
+) !default;
+
+$base: 16;
+$spacer: 1rem !default;
+$base-spacer: 4;
+
+$spacers: (
+  0: 0,
+  1: ($base-spacer * 1) / $base * $spacer,
+  2: ($base-spacer * 2) / $base * $spacer,
+  3: ($base-spacer * 3) / $base * $spacer,
+  4: ($base-spacer * 4) / $base * $spacer,
+  5: ($base-spacer * 5) / $base * $spacer,
+  6: ($base-spacer * 6) / $base * $spacer,
+  8: ($base-spacer * 8) / $base * $spacer,
+  9: ($base-spacer * 9) / $base * $spacer,
+  10: ($base-spacer * 10) / $base * $spacer,
+  12: ($base-spacer * 12) / $base * $spacer,
+  15: ($base-spacer * 15) / $base * $spacer,
+  16: ($base-spacer * 16) / $base * $spacer,
+  20: ($base-spacer * 20) / $base * $spacer,
+  24: ($base-spacer * 24) / $base * $spacer,
+  31: ($base-spacer * 31) / $base * $spacer,
+  auto: auto,
+) !default;
+
+$font-sizes: (
+  base: $spacer,
+  sm: (14 / $base) * $spacer,
+  md: (20 / $base) * $spacer,
+  lg: (24 / $base) * $spacer,
+  xl: (32 / $base) * $spacer,
+  2xl: (36 / $base) * $spacer,
+  3xl: (40 / $base) * $spacer,
+  4xl: (42 / $base) * $spacer,
+  5xl: (48 / $base) * $spacer,
+  6xl: (64 / $base) * $spacer,
+) !default;
+
+$font-weight: (
+  medium: 500,
+  bold: 700,
+);
+
+$font-style: (
+  normal: normal,
+  italic: italic,
+);
+
+$grid-gutter-width: 24 !default;
+
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+
+$text-aligns: (left, center, right);
+$vertical-aligns: (baseline, top, middle, bottom, text-bottom, text-top);
+
+$displays: (
+  none: none,
+  block: block,
+  flex: flex,
+  inline: inline,
+  inline-block: inline-block,
+  inline-flex: inline-flex,
+);
+
+$flex-wrap: (
+  wrap: wrap,
+  nowrap: nowrap,
+  wrap-reverse: wrap-reverse,
+);
+
+$flex-direction: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse,
+);
+
+$justify-content: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+
+$align-items: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch,
+);
+
+$sides: (
+  t: top,
+  e: right,
+  b: bottom,
+  s: left,
+);

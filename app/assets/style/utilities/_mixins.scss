@@ -1,0 +1,17 @@
+@mixin hide-text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
