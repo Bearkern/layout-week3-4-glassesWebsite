@@ -1,7 +1,0 @@
-@each $name, $color in $colors {
-  .btn-#{$name} {
-    background: $color;
-    color: #fff;
-    border: none;
-  }
-}
