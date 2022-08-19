@@ -146,3 +146,24 @@
     }
   }
 }
+
+// order
+@each $key, $order in $orders {
+  .order-#{$key} {
+    order: $order;
+  }
+}
+@each $key, $order in $orders {
+  @include pad {
+    .order-md-#{$key} {
+      order: $order;
+    }
+  }
+}
+@each $key, $order in $orders {
+  @include desktop {
+    .order-lg-#{$key} {
+      order: $order;
+    }
+  }
+}

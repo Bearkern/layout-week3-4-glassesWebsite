@@ -1,22 +1,14 @@
-.footer {
-  background-color: $primary;
-  color: $white;
-}
-
 .social-media {
   img {
     width: 24px;
-    margin-left: 8px;
+    @include pad {
+      width: 40px;
+    }
+    @include desktop {
+      width: 48px;
+    }
   }
 }
 .copyright {
   border-top: 1px solid $white;
-}
-
-@include pad {
-  .social-media li {
-    img {
-      width: 40px;
-    }
-  }
 }

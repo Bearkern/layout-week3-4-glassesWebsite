@@ -19,4 +19,10 @@ a {
   color: inherit;
   display: block;
   text-decoration: none;
+  &:hover {
+    opacity: .8;
+  }
+}
+a, button {
+  transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
 }
