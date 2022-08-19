@@ -1,0 +1,120 @@
+.banner {
+  background: url(../images/home-header-sm.png) no-repeat center / cover;
+  height: 396px;
+  @include pad {
+    height: 787px;
+  }
+  @include desktop {
+    background: url(../images/home-header.png) no-repeat center / cover;
+  }
+}
+.feature {
+  margin: 0 (-$grid-gutter-width / 2) * 1px;
+  li {
+    padding: 0 ($grid-gutter-width / 2) * 1px;
+  }
+  img {
+    width: 100px;
+    margin-bottom: 16px;
+  }
+}
+
+.classic {
+  margin: 0 (-$grid-gutter-width / 2) * 1px;
+  li {
+    padding: 0 ($grid-gutter-width / 2) * 1px;
+  }
+}
+
+.co-branding {
+  background: url(../images/index-bg-sm.png) no-repeat center / cover;
+  @include desktop {
+    background: url(../images/index-bg.png) no-repeat center / cover;
+  }
+}
+.branding {
+  img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.recommend-card {
+  margin: 0 (-$grid-gutter-width / 2) * 1px;
+  li {
+    padding: 0 ($grid-gutter-width / 2) * 1px;
+    img {
+      height: 306px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+  .card {
+    &-item {
+      box-shadow: 0px 2px 6px #00000029;
+      border-radius: 4px;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      height: 205px;
+      padding: 16px;
+    }
+  }
+}
+
+form {
+  input:not([type='checkbox']),
+  textarea {
+    background: transparent;
+    border: 1px solid $black;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+    padding: 6px 12px;
+  }
+  .checkbox-container {
+    padding-left: 28px;
+    position: relative;
+    user-select: none;
+  }
+  input[type='checkbox'] {
+    appearance: none;
+    position: absolute;
+    background: transparent;
+    border: 2px solid $black;
+    border-radius: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px 4px;
+    cursor: pointer;
+    + label {
+      cursor: pointer;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 1px;
+      width: 8px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+    &:checked {
+      background-color: $primary;
+      border: 1px solid transparent;
+      &::before {
+        display: block;
+      }
+    }
+  }
+}

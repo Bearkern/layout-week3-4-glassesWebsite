@@ -1,31 +1,39 @@
 @each $value, $spacer in $spacers {
   .mx-#{$value} {
-    margin: 0 #{$spacer};
+    margin-right: #{$spacer};
+    margin-left: #{$spacer};
   }
   .my-#{$value} {
-    margin: #{$spacer} 0;
+    margin-top: #{$spacer};
+    margin-bottom: #{$spacer};
   }
   .px-#{$value} {
-    padding: 0 #{$spacer};
+    padding-right: #{$spacer};
+    padding-left: #{$spacer};
   }
   .py-#{$value} {
-    padding: #{$spacer} 0;
+    padding-top: #{$spacer};
+    padding-bottom: #{$spacer};
   }
 }
 
 @each $value, $spacer in $spacers {
   @include pad {
     .mx-md-#{$value} {
-      margin: 0 #{$spacer};
+      margin-right: #{$spacer};
+      margin-left: #{$spacer};
     }
     .my-md-#{$value} {
-      margin: #{$spacer} 0;
+      margin-top: #{$spacer};
+      margin-bottom: #{$spacer};
     }
     .px-md-#{$value} {
-      padding: 0 #{$spacer};
+      padding-right: #{$spacer};
+      padding-left: #{$spacer};
     }
     .py-md-#{$value} {
-      padding: #{$spacer} 0;
+      padding-top: #{$spacer};
+      padding-bottom: #{$spacer};
     }
   }
 }
@@ -33,16 +41,20 @@
 @each $value, $spacer in $spacers {
   @include desktop {
     .mx-lg-#{$value} {
-      margin: 0 #{$spacer};
+      margin-right: #{$spacer};
+      margin-left: #{$spacer};
     }
     .my-lg-#{$value} {
-      margin: #{$spacer} 0;
+      margin-top: #{$spacer};
+      margin-bottom: #{$spacer};
     }
     .px-lg-#{$value} {
-      padding: 0 #{$spacer};
+      padding-right: #{$spacer};
+      padding-left: #{$spacer};
     }
     .py-lg-#{$value} {
-      padding: #{$spacer} 0;
+      padding-top: #{$spacer};
+      padding-bottom: #{$spacer};
     }
   }
 }
@@ -80,6 +92,75 @@
       .p#{$key}-lg-#{$value} {
         padding-#{$side}: #{$spacer};
       }
+    }
+  }
+}
+
+// width
+@each $key, $width in $widths {
+  .w-#{$key} {
+    width: #{$width};
+  }
+}
+
+@each $key, $width in $widths {
+  @include pad {
+    .w-md-#{$key} {
+      width: #{$width};
+    }
+  }
+}
+
+@each $key, $width in $widths {
+  @include desktop {
+    .w-lg-#{$key} {
+      width: #{$width};
+    }
+  }
+}
+
+// max-width
+@each $key, $width in $widths {
+  .max-w-#{$key} {
+    max-width: #{$width};
+  }
+}
+
+@each $key, $width in $widths {
+  @include pad {
+    .max-w-md-#{$key} {
+      max-width: #{$width};
+    }
+  }
+}
+
+@each $key, $width in $widths {
+  @include desktop {
+    .max-w-lg-#{$key} {
+      max-width: #{$width};
+    }
+  }
+}
+
+// height
+@each $key, $height in $heights {
+  .h-#{$key} {
+    height: #{$height};
+  }
+}
+
+@each $key, $height in $heights {
+  @include pad {
+    .h-md-#{$key} {
+      height: #{$height};
+    }
+  }
+}
+
+@each $key, $height in $heights {
+  @include desktop {
+    .h-lg-#{$key} {
+      height: #{$height};
     }
   }
 }

@@ -1,7 +1,35 @@
-@each $name, $color in $colors {
-  .btn-#{$name} {
-    background: $color;
-    color: #fff;
-    border: none;
+.btn {
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  &-primary {
+    background-color: $primary;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &.btn-sm {
+    padding: 6px 12px;
+  }
+  &.btn-lg {
+    font-weight: bold;
+    width: 100%;
+    padding: 16px;
+    @include pad {
+      width: 60%;
+    }
+    @include desktop {
+      width: 66.666667%;
+    }
+  }
+}
+@each $key, $color in $colors {
+  $darkenColor: darken($color, 10%);
+  .btn-#{$key} {
+    background: #{$color};
+    color: $white;
+    &:hover {
+      background: $darkenColor;
+    }
   }
 }

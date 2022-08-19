@@ -58,6 +58,7 @@ $font-sizes: (
 $font-weight: (
   medium: 500,
   bold: 700,
+  black: 900,
 );
 
 $font-style: (
@@ -117,4 +118,26 @@ $sides: (
   e: right,
   b: bottom,
   s: left,
+);
+
+$widths: (
+  auto: auto,
+  20: 20%,
+  25: 25%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  80: 80%,
+  33: 33.333333%,
+  66: 66.666667%,
+  83: 83.333333%,
+  full: 100%,
+  screen: 100vw,
+);
+
+$heights: (
+  auto: auto,
+  full: 100%,
+  screen: 100vh,
 );

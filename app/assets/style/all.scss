@@ -3,11 +3,7 @@
 
 @import 'utilities/variables';
 @import 'utilities/mixins';
-@import 'utilities/typography';
-@import 'utilities/align';
-@import 'utilities/grid';
-@import 'utilities/spacing';
-@import 'utilities/colors';
+
 
 @import 'module/buttons';
 @import 'module/card';
@@ -21,3 +17,10 @@
 @import 'pages/locations';
 @import 'pages/faq';
 @import 'pages/blog';
+
+@import 'utilities/typography';
+@import 'utilities/align';
+@import 'utilities/grid';
+@import 'utilities/spacing';
+@import 'utilities/colors';
+
