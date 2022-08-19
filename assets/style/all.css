@@ -148,6 +148,13 @@ a {
   color: inherit;
   display: block;
   text-decoration: none; }
+  a:hover {
+    opacity: .8; }
+
+a, button {
+  -webkit-transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
+  -o-transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
+  transition: color .3s, background-color .3s, opacity .3s, border-color .3s; }
 
 .btn {
   font-size: inherit;
@@ -272,20 +279,17 @@ a {
     .menu li {
       border: none; } }
 
-.footer {
-  background-color: #aa0601;
-  color: #ffffff; }
-
 .social-media img {
-  width: 24px;
-  margin-left: 8px; }
+  width: 24px; }
+  @media (min-width: 768px) {
+    .social-media img {
+      width: 40px; } }
+  @media (min-width: 992px) {
+    .social-media img {
+      width: 48px; } }
 
 .copyright {
   border-top: 1px solid #ffffff; }
-
-@media (min-width: 768px) {
-  .social-media li img {
-    width: 40px; } }
 
 .banner {
   background: url(../images/home-header-sm.png) no-repeat center/cover;
@@ -1183,6 +1187,142 @@ form input[type='checkbox'] {
 @media (min-width: 992px) {
   .gap-lg-auto {
     gap: auto; } }
+
+.order-first {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
+.order-0 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
+
+.order-1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.order-2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.order-3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.order-4 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+
+.order-5 {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5; }
+
+.order-lsat {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6; }
+
+@media (min-width: 768px) {
+  .order-md-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
+
+@media (min-width: 768px) {
+  .order-md-0 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; } }
+
+@media (min-width: 768px) {
+  .order-md-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+@media (min-width: 768px) {
+  .order-md-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (min-width: 768px) {
+  .order-md-3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
+@media (min-width: 768px) {
+  .order-md-4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; } }
+
+@media (min-width: 768px) {
+  .order-md-5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; } }
+
+@media (min-width: 768px) {
+  .order-md-lsat {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; } }
+
+@media (min-width: 992px) {
+  .order-lg-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
+
+@media (min-width: 992px) {
+  .order-lg-0 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; } }
+
+@media (min-width: 992px) {
+  .order-lg-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+@media (min-width: 992px) {
+  .order-lg-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (min-width: 992px) {
+  .order-lg-3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
+@media (min-width: 992px) {
+  .order-lg-4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; } }
+
+@media (min-width: 992px) {
+  .order-lg-5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; } }
+
+@media (min-width: 992px) {
+  .order-lg-lsat {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; } }
 
 .mx-0 {
   margin-right: 0;
