@@ -151,7 +151,7 @@ a {
   a:hover {
     opacity: .8; }
 
-a, button {
+a, a::before, a::after, button, button::before, button::after {
   -webkit-transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
   -o-transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
   transition: color .3s, background-color .3s, opacity .3s, border-color .3s; }
@@ -299,7 +299,7 @@ a, button {
       height: 787px; } }
   @media (min-width: 992px) {
     .banner {
-      background: url(../images/home-header.png) no-repeat center/cover; } }
+      background: url(../images/home-header.png) no-repeat center left/cover; } }
 
 .feature {
   margin: 0 -12px; }
@@ -312,7 +312,19 @@ a, button {
 .classic {
   margin: 0 -12px; }
   .classic li {
-    padding: 0 12px; }
+    padding: 0 12px;
+    position: relative; }
+  .classic a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .classic a:hover::before {
+    -webkit-box-shadow: 0px 2px 6px #707070;
+            box-shadow: 0px 2px 6px #707070; }
 
 .co-branding {
   background: url(../images/index-bg-sm.png) no-repeat center/cover; }
@@ -325,6 +337,21 @@ a, button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.branding li {
+  position: relative; }
+
+.branding a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+.branding a:hover::before {
+  border: 1px solid #aa0601; }
 
 .recommend-card {
   margin: 0 -12px; }
