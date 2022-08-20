@@ -23,6 +23,6 @@ a {
     opacity: .8;
   }
 }
-a, button {
+a, a::before, a::after, button, button::before, button::after {
   transition: color .3s, background-color .3s, opacity .3s, border-color .3s;
 }
