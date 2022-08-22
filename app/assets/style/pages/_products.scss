@@ -1,0 +1,26 @@
+.products-nav {
+  @include desktop {
+    margin: 0 auto;
+    padding: 0 ($grid-gutter-width / 2) * 1px;
+    max-width: 1296px + $grid-gutter-width * 1px;
+  }
+  li {
+    border: 1px solid #dcdcdc;
+    a {
+      padding: 16px 12px 8px;
+      &.active {
+        border-bottom: 8px solid $primary;
+      }
+      &:hover {
+        color: $primary;
+      }
+      @include desktop {
+        padding: 24px 12px 16px;
+      }
+    }
+  }
+}
+
+.products {
+  margin: 0 -12px;
+}

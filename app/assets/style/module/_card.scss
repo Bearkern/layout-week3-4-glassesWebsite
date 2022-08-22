@@ -1,0 +1,24 @@
+.products-card {
+  padding: 0 ($grid-gutter-width / 2) * 1px;
+  .card-body {
+    div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      span {
+        color: $primary;
+        font-weight: 500;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 8px;
+      span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
