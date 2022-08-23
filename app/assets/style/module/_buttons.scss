@@ -19,12 +19,6 @@
       width: 66.666667%;
     }
   }
-  &.btn-full {
-    width: 100%;
-    padding: 16px;
-    font-size: 19px;
-    line-height: 1.42;
-  }
 }
 
 @each $key, $color in $colors {
