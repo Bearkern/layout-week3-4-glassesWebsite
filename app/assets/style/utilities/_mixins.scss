@@ -3,6 +3,14 @@
   white-space: nowrap;
   overflow: hidden;
 }
+@mixin line-clamp($line-num) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+}
 
 @mixin pad {
   @media (min-width: 768px) {

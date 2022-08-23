@@ -147,6 +147,50 @@
   }
 }
 
+@each $key, $spacer in $spacers {
+  .row-gap-#{$key} {
+    row-gap: #{$spacer};
+  }
+}
+
+@each $key, $spacer in $spacers {
+  @include pad {
+    .row-gap-md-#{$key} {
+      row-gap: #{$spacer};
+    }
+  }
+}
+
+@each $key, $spacer in $spacers {
+  @include desktop {
+    .row-gap-lg-#{$key} {
+      row-gap: #{$spacer};
+    }
+  }
+}
+
+@each $key, $spacer in $spacers {
+  .column-gap-#{$key} {
+    column-gap: #{$spacer};
+  }
+}
+
+@each $key, $spacer in $spacers {
+  @include pad {
+    .column-gap-md-#{$key} {
+      column-gap: #{$spacer};
+    }
+  }
+}
+
+@each $key, $spacer in $spacers {
+  @include desktop {
+    .column-gap-lg-#{$key} {
+      column-gap: #{$spacer};
+    }
+  }
+}
+
 // order
 @each $key, $order in $orders {
   .order-#{$key} {

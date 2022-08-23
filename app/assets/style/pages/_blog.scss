@@ -1,0 +1,57 @@
+.blog-card {
+  .blog-img {
+    object-fit: cover;
+  }
+  .card-body {
+    span {
+      opacity: 0.7;
+    }
+  }
+  p {
+    @include pad {
+      @include line-clamp(6);
+    }
+  }
+  .more {
+    width: 4em;
+    color: #555555;
+    text-align: right;
+    background-color: $white;
+    margin-left: auto;
+    margin-top: auto;
+    transform: translateY(-100%);
+    &::before {
+      content: '…';
+    }
+    &:hover {
+      color: $primary;
+      opacity: 1;
+    }
+    @include desktop {
+      text-transform: uppercase;
+      transform: none;
+      color: $primary-dark;
+      &::before {
+        content: '';
+      }
+    }
+  }
+}
+
+.share-blog {
+  img {
+    width: 24px;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.related-link {
+  border-top: 1px solid #707070;
+  a {
+    &:hover {
+      color: $primary;
+    }
+  }
+}

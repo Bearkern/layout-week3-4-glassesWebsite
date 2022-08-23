@@ -26,15 +26,19 @@
 .menu {
   display: none;
   position: absolute;
-  top: 72px;
+  top: 80px;
   width: 100%;
   margin-left: -12px;
   z-index: 1045;
   background: $primary;
   text-align: center;
-
   li {
-    border: 1px solid #fff;
+    &:not(:first-child) a {
+      margin-top: -1px;
+    }
+    a {
+      border: 1px solid #fff;
+    }
   }
 }
 @include pad {
@@ -49,11 +53,12 @@
     width: auto;
     ul {
       flex-direction: row;
-      border: none;
       gap: 64px;
     }
     li {
-      border: none;
+      a {
+        border: none;
+      }
     }
   }
 }

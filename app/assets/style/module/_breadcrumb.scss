@@ -1,0 +1,21 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    + li {
+      padding-left: 0.125rem;
+      &::before {
+        float: left;
+        padding-right: 0.125rem;
+        color: $gray;
+        content: '/';
+      }
+    }
+    &.active {
+      color: $primary;
+    }
+    a {
+      display: inline;
+    }
+  }
+}
