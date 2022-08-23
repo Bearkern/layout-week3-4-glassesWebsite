@@ -40,19 +40,23 @@
     
 <main>
   <section class="container">
-    <h1 class="location-title text-lg text-md-5xl fw-bold ps-4 mt-10 mb-6 mb-md-8">門市據點</h1>
+    <h1 class="location-title text-lg text-md-5xl fw-bold ps-4 mt-10 mt-md-20 mt-lg-24 mb-6 mb-md-8">門市據點</h1>
     <div class="city-select d-flex align-items-center mb-6 mb-md-10 w-md-66 w-lg-33">
-      <label class="me-2 me-4 text-md-lg" for="citys">選擇地區</label>
+      <label class="me-2 me-4 text-md-lg" for="citys">選擇分店</label>
       <select name="citys" id="citys">
-        <option value="Taipei">台北市</option>
-        <option value="Taichung">台中市</option>
-        <option value="Kaohsiung">高雄市</option>
+        <option value="Taipei">台北中山旗艦店</option>
+        <option value="Taichung">台北綠園店</option>
+        <option value="Kaohsiung">台中清水旗艦店</option>
+        <option value="Kaohsiung">高雄中正形象店</option>
+        <option value="Kaohsiung">高雄夢時代店</option>
       </select>
     </div>
-    <ul class="locations d-flex flex-wrap mb-10 mb-md-14 mb-lg-8">
-      <li class="locations-card w-md-50 w-lg-33 mb-6 mb-lg-12">
-        <img src="./assets/images/store-1.png" alt="store 1" />
-        <div class="card-body">
+    <div class="locations d-flex flex-column flex-lg-row">
+      <div
+        class="locations-card w-lg-41 d-flex flex-column flex-md-row flex-lg-column gap-md-6 gap-lg-0 mb-6 mb-lg-20"
+      >
+        <img class="w-md-50 w-lg-full" src="./assets/images/store-1.png" alt="store 1" />
+        <div class="card-body w-md-50 w-lg-full">
           <h2>台北中山旗艦店</h2>
           <ul>
             <li class="d-flex gap-2">
@@ -68,94 +72,16 @@
               <p class="text-md">地址：台北市中山區南京東路 25 巷 2-1 號</p>
             </li>
           </ul>
-          <a href="./locations-detail.html">詳細資訊</a>
         </div>
-      </li>
-      <li class="locations-card w-md-50 w-lg-33 mb-6 mb-lg-12">
-        <img src="./assets/images/store-2.png" alt="store 1" />
-        <div class="card-body">
-          <h2>台北綠園店</h2>
-          <ul>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">phone</span>
-              <p class="text-md mb-2">電話：(02)000-2345</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">schedule</span>
-              <p class="text-md mb-2">營業時間：10:00-21:00</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">place</span>
-              <p class="text-md">地址：台北市中正區復興南路 132-1 號</p>
-            </li>
-          </ul>
-          <a href="./locations-detail.html">詳細資訊</a>
-        </div>
-      </li>
-      <li class="locations-card w-md-50 w-lg-33 mb-6 mb-lg-12">
-        <img src="./assets/images/store-3.png" alt="store 1" />
-        <div class="card-body">
-          <h2>台中清水旗艦店</h2>
-          <ul>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">phone</span>
-              <p class="text-md mb-2">電話：(02)000-1234</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">schedule</span>
-              <p class="text-md mb-2">營業時間：10:00-21:00</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">place</span>
-              <p class="text-md">地址：台中市清水區經南一路 23 號 8 樓</p>
-            </li>
-          </ul>
-          <a href="./locations-detail.html">詳細資訊</a>
-        </div>
-      </li>
-      <li class="locations-card w-md-50 w-lg-33 mb-6 mb-lg-12">
-        <img src="./assets/images/store-4.png" alt="store 1" />
-        <div class="card-body">
-          <h2>高雄中正形象店</h2>
-          <ul>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">phone</span>
-              <p class="text-md mb-2">電話：(07)000-2345</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">schedule</span>
-              <p class="text-md mb-2">營業時間：10:00-21:00</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">place</span>
-              <p class="text-md">地址：高雄市苓雅區中正路 38 號 12 樓</p>
-            </li>
-          </ul>
-          <a href="./locations-detail.html">詳細資訊</a>
-        </div>
-      </li>
-      <li class="locations-card w-md-50 w-lg-33 mb-6 mb-lg-12">
-        <img src="./assets/images/store-5.png" alt="store 1" />
-        <div class="card-body">
-          <h2>高雄夢時代店</h2>
-          <ul>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">phone</span>
-              <p class="text-md mb-2">電話：(02)000-1234</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">schedule</span>
-              <p class="text-md mb-2">營業時間：10:00-21:00</p>
-            </li>
-            <li class="d-flex gap-2">
-              <span class="material-symbols-outlined py-1">place</span>
-              <p class="text-md">地址：高雄市前鎮區中華一路 63 號 6 樓</p>
-            </li>
-          </ul>
-          <a href="./locations-detail.html">詳細資訊</a>
-        </div>
-      </li>
-    </ul>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4583810122717!2d121.52691135082866!3d25.052448443626393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1661224484800!5m2!1szh-TW!2stw"
+        class="w-full w-lg-58 mb-16 mb-md-20"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </section>
 </main>
 

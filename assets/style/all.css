@@ -174,11 +174,6 @@ a, a::before, a::after, button, button::before, button::after {
     @media (min-width: 992px) {
       .btn.btn-lg {
         width: 66.666667%; } }
-  .btn.btn-full {
-    width: 100%;
-    padding: 16px;
-    font-size: 19px;
-    line-height: 1.42; }
 
 .btn-primary-light {
   background-color: #fbf2f2;
@@ -563,6 +558,23 @@ form input[type='checkbox'] {
   .locations .card-body ul {
     padding: 16px 24px;
     border: 1px solid #00000020; }
+  .locations .card-body a {
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    padding: 16px;
+    font-size: 19px;
+    line-height: 1.42; }
+  .locations iframe {
+    padding: 0 12px;
+    height: 208px; }
+    @media (min-width: 768px) {
+      .locations iframe {
+        height: 414px; } }
+    @media (min-width: 992px) {
+      .locations iframe {
+        height: auto; } }
 
 .text-base {
   font-size: 1rem; }
@@ -3607,6 +3619,12 @@ form input[type='checkbox'] {
 .w-33 {
   width: 33.33333%; }
 
+.w-41 {
+  width: 41.66667%; }
+
+.w-58 {
+  width: 58.33333%; }
+
 .w-66 {
   width: 66.66667%; }
 
@@ -3654,6 +3672,14 @@ form input[type='checkbox'] {
 @media (min-width: 768px) {
   .w-md-33 {
     width: 33.33333%; } }
+
+@media (min-width: 768px) {
+  .w-md-41 {
+    width: 41.66667%; } }
+
+@media (min-width: 768px) {
+  .w-md-58 {
+    width: 58.33333%; } }
 
 @media (min-width: 768px) {
   .w-md-66 {
@@ -3708,6 +3734,14 @@ form input[type='checkbox'] {
     width: 33.33333%; } }
 
 @media (min-width: 992px) {
+  .w-lg-41 {
+    width: 41.66667%; } }
+
+@media (min-width: 992px) {
+  .w-lg-58 {
+    width: 58.33333%; } }
+
+@media (min-width: 992px) {
   .w-lg-66 {
     width: 66.66667%; } }
 
@@ -3749,6 +3783,12 @@ form input[type='checkbox'] {
 
 .max-w-33 {
   max-width: 33.33333%; }
+
+.max-w-41 {
+  max-width: 41.66667%; }
+
+.max-w-58 {
+  max-width: 58.33333%; }
 
 .max-w-66 {
   max-width: 66.66667%; }
@@ -3797,6 +3837,14 @@ form input[type='checkbox'] {
 @media (min-width: 768px) {
   .max-w-md-33 {
     max-width: 33.33333%; } }
+
+@media (min-width: 768px) {
+  .max-w-md-41 {
+    max-width: 41.66667%; } }
+
+@media (min-width: 768px) {
+  .max-w-md-58 {
+    max-width: 58.33333%; } }
 
 @media (min-width: 768px) {
   .max-w-md-66 {
@@ -3849,6 +3897,14 @@ form input[type='checkbox'] {
 @media (min-width: 992px) {
   .max-w-lg-33 {
     max-width: 33.33333%; } }
+
+@media (min-width: 992px) {
+  .max-w-lg-41 {
+    max-width: 41.66667%; } }
+
+@media (min-width: 992px) {
+  .max-w-lg-58 {
+    max-width: 58.33333%; } }
 
 @media (min-width: 992px) {
   .max-w-lg-66 {
