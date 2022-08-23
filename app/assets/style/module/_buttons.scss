@@ -2,9 +2,6 @@
   font-size: inherit;
   line-height: inherit;
   border: none;
-  &-primary {
-    background-color: $primary;
-  }
   &:hover {
     cursor: pointer;
   }
@@ -22,14 +19,26 @@
       width: 66.666667%;
     }
   }
+  &.btn-full {
+    width: 100%;
+    padding: 16px;
+    font-size: 19px;
+    line-height: 1.42;
+  }
 }
+
 @each $key, $color in $colors {
-  $darkenColor: darken($color, 10%);
+  $hoverColor: null;
+  @if $key == black {
+    $hoverColor: lighten($color, 20%);
+  } @else {
+    $hoverColor: darken($color, 10%);
+  } 
   .btn-#{$key} {
-    background: #{$color};
+    background-color: #{$color};
     color: $white;
     &:hover {
-      background: $darkenColor;
+      background-color: $hoverColor;
     }
   }
 }

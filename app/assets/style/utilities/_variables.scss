@@ -5,9 +5,9 @@ $brown-dark: #5F3E2D;
 $brown: #B75929;
 $black: #000000;
 $white: #ffffff;
-$gray-light: #000029;
+$gray-light: #707070;
 $gray: #DEE2E6;
-$gray-dark: #707070;
+$gray-dark: #000029;
 
 $colors: (
   primary-light: $primary-light,
@@ -38,6 +38,7 @@ $spacers: (
   9: ($base-spacer * 9) / $base * $spacer,
   10: ($base-spacer * 10) / $base * $spacer,
   12: ($base-spacer * 12) / $base * $spacer,
+  14: ($base-spacer * 14) / $base * $spacer,
   15: ($base-spacer * 15) / $base * $spacer,
   16: ($base-spacer * 16) / $base * $spacer,
   20: ($base-spacer * 20) / $base * $spacer,
